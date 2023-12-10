@@ -5,6 +5,7 @@ images :{
 
 },
 typescript:{ 
-ignoreBuildErrors:true,}
+ignoreBuildErrors:true,
+}
 }
 module.exports = nextConfig
