@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import { fetchCars } from '@/utils';
 import SearchBar from '@/components/SearchBar';
@@ -42,11 +42,9 @@ export default async function Home({ searchParams }: HomeProps) {
         {!isDataEmpty ? (
           <section>
             <div className='home__cars-wrapper'>
-              
-
-{allCars?.map((car, index) => (
-  <CarCard key={index} car={car} />
-))}
+              {allCars?.map((car, index) => (
+                <CarCard key={index} car={car} />
+              ))}
             </div>
 
             <ShowMore
